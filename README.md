@@ -31,6 +31,11 @@ Preset Configurations
 [FLMAVAssetExportConfiguration configurationForTablet];
 ```
 
+Documentation
+---
+
+[appledoc](https://dl.dropboxusercontent.com/u/7817937/___doc___FLMAVAssetExportService/html/index.html) is provided.
+
 LICENSE
 ---
 
