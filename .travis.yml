@@ -1,0 +1,19 @@
+language: objective-c
+osx_image: xcode61
+
+branches:
+  only:
+  - master
+notifications:
+  email: false
+
+before_install:
+  - gem install xcpretty
+
+before_script: pod install
+
+script: make test
+
+after_success:
+  - make coveralls
+~                  

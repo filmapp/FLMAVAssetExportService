@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>--company-id</key>
+  <string>org.openaquamarine</string>
+  <key>--project-company</key>
+  <string>filmapp</string>
+  <key>--project-name</key>
+  <string>FLMAVAssetExportService</string>
+  <key>--templates</key>
+  <string>~/RubymineProjects/SwiftyDoc</string>
+  <key>--output</key>
+  <string>~/dropbox/Public/___doc___FLMAVAssetExportService</string>
+  <key>--ignore</key>
+  <array>
+  	<string>.m</string>
+  	<string>Pods</string>
+  </array>
+  <key>--index-desc</key>
+  <key>README.md</key>
+  <key>--prefix-merged-sections</key>
+	<true/>
+  <key>--keep-undocumented-objects</key>
+	<true/>
+  <key>--keep-undocumented-members</key>
+	<true/>
+  <key>--create-html</key>
+	<true/>
+  <key>--no-create-docset</key>
+	<true/>
+</dict>
+</plist>
+
