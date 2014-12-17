@@ -9,4 +9,6 @@ Pod::Spec.new do |s|
   s.source_files  = "FLMAVAssetExportService/Classes/**/*.{h,m}"
   s.requires_arc = true
   s.platform = "ios", '7.0'
+
+  s.frameworks = "AVFoundation"
 end
