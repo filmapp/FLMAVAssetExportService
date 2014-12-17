@@ -15,6 +15,9 @@
 		D4CF8DBB1A41B92600D873F1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CF8DBA1A41B92600D873F1 /* Images.xcassets */; };
 		D4CF8DBE1A41B92600D873F1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4CF8DBC1A41B92600D873F1 /* LaunchScreen.xib */; };
 		D4CF8DCA1A41B92600D873F1 /* FLMAVAssetExportServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF8DC91A41B92600D873F1 /* FLMAVAssetExportServiceTests.m */; };
+		D4CF8DE31A41BA2200D873F1 /* FLMAVAssetExportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF8DDE1A41BA2200D873F1 /* FLMAVAssetExportOperation.m */; };
+		D4CF8DE41A41BA2200D873F1 /* FLMAVAssetExportConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF8DE01A41BA2200D873F1 /* FLMAVAssetExportConfiguration.m */; };
+		D4CF8DE51A41BA2200D873F1 /* FLMAVAssetExportService.m in Sources */ = {isa = PBXBuildFile; fileRef = D4CF8DE21A41BA2200D873F1 /* FLMAVAssetExportService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		D4CF8DC31A41B92600D873F1 /* FLMAVAssetExportServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FLMAVAssetExportServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CF8DC81A41B92600D873F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4CF8DC91A41B92600D873F1 /* FLMAVAssetExportServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLMAVAssetExportServiceTests.m; sourceTree = "<group>"; };
+		D4CF8DDD1A41BA2200D873F1 /* FLMAVAssetExportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMAVAssetExportOperation.h; sourceTree = "<group>"; };
+		D4CF8DDE1A41BA2200D873F1 /* FLMAVAssetExportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMAVAssetExportOperation.m; sourceTree = "<group>"; };
+		D4CF8DDF1A41BA2200D873F1 /* FLMAVAssetExportConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMAVAssetExportConfiguration.h; sourceTree = "<group>"; };
+		D4CF8DE01A41BA2200D873F1 /* FLMAVAssetExportConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMAVAssetExportConfiguration.m; sourceTree = "<group>"; };
+		D4CF8DE11A41BA2200D873F1 /* FLMAVAssetExportService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLMAVAssetExportService.h; sourceTree = "<group>"; };
+		D4CF8DE21A41BA2200D873F1 /* FLMAVAssetExportService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLMAVAssetExportService.m; sourceTree = "<group>"; };
 		EF6FA4623AB0977EE968D749 /* libPods-FLMAVAssetExportServiceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FLMAVAssetExportServiceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -139,6 +148,12 @@
 		D4CF8DD31A41B9DF00D873F1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4CF8DDD1A41BA2200D873F1 /* FLMAVAssetExportOperation.h */,
+				D4CF8DDE1A41BA2200D873F1 /* FLMAVAssetExportOperation.m */,
+				D4CF8DDF1A41BA2200D873F1 /* FLMAVAssetExportConfiguration.h */,
+				D4CF8DE01A41BA2200D873F1 /* FLMAVAssetExportConfiguration.m */,
+				D4CF8DE11A41BA2200D873F1 /* FLMAVAssetExportService.h */,
+				D4CF8DE21A41BA2200D873F1 /* FLMAVAssetExportService.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -287,8 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CF8DB61A41B92600D873F1 /* ViewController.m in Sources */,
+				D4CF8DE51A41BA2200D873F1 /* FLMAVAssetExportService.m in Sources */,
 				D4CF8DB31A41B92600D873F1 /* AppDelegate.m in Sources */,
 				D4CF8DB01A41B92600D873F1 /* main.m in Sources */,
+				D4CF8DE41A41BA2200D873F1 /* FLMAVAssetExportConfiguration.m in Sources */,
+				D4CF8DE31A41BA2200D873F1 /* FLMAVAssetExportOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FLMAVAssetExportService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -421,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FLMAVAssetExportService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
